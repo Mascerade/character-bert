@@ -4,9 +4,9 @@
 """ Defines the main CharacterBERT PyTorch class. """
 import torch
 from torch import nn
-from transformers.modeling_bert import BertPreTrainedModel, BertEncoder, BertPooler
+from transformers.models.bert.modeling_bert import BertPreTrainedModel, BertEncoder, BertPooler
 
-from modeling.character_cnn import CharacterCNN
+from character_bert.modeling.character_cnn import CharacterCNN
 
 
 class BertCharacterEmbeddings(nn.Module):

@@ -17,14 +17,14 @@ from transformers import (
     BertForTokenClassification,
     BertForSequenceClassification
 )
-from utils.character_cnn import CharacterIndexer
-from modeling.character_bert import CharacterBertModel
+from character_bert.utils.character_cnn import CharacterIndexer
+from character_bert.modeling.character_bert import CharacterBertModel
 
 from data import load_classification_dataset, load_sequence_labelling_dataset
 
-from utils.misc import set_seed
-from utils.data import retokenize, build_features
-from utils.training import train, evaluate
+from character_bert.utils.misc import set_seed
+from character_bert.utils.data import retokenize, build_features
+from character_bert.utils.training import train, evaluate
 
 from download import MODEL_TO_URL
 AVAILABLE_MODELS = list(MODEL_TO_URL.keys()) + ['bert-base-uncased']
