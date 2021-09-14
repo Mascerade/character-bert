@@ -26,7 +26,7 @@ from character_bert.utils.misc import set_seed
 from character_bert.utils.data import retokenize, build_features
 from character_bert.utils.training import train, evaluate
 
-from download import MODEL_TO_URL
+from character_bert.download import MODEL_TO_URL
 AVAILABLE_MODELS = list(MODEL_TO_URL.keys()) + ['bert-base-uncased']
 
 def parse_args():
