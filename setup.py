@@ -15,6 +15,6 @@ setup(
    packages=['character_bert'],
    install_requires=['torch',
                      'numpy',
-                     'sklearn',
+                     'scikit-learn',
                      'transformers']
 )
