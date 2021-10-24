@@ -12,7 +12,7 @@ setup(
    author='Hicham El Boukkouri',
    author_email='helboukkouri.dev@gmail.com',
    url="https://github.com/Mascerade/character-bert",
-   packages=['character_bert'],
+   packages=['character_bert', 'character_bert.modeling', 'character_bert.utils'],
    install_requires=['torch',
                      'numpy',
                      'scikit-learn',
